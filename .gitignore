@@ -1,0 +1,5 @@
+# node modules directory
+node_modules/
+
+#Mav DS_Store Files
+.DS_Store/
