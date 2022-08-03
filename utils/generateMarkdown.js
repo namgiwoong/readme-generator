@@ -1,59 +1,43 @@
-// Function for rendering title
-function renderTitle(title) {
-  return `# ${data.title}`;
-}
-
-// Function for rendering
-function renderDescription(description) {
-  return `# ${data.description}`;
-}
-
-// Function for rendering
+// Function for rendering table of contents
 function renderTableOfContents(tableOfContents) {
+  // WHEN I click on the links in the Table of Contents
+  // THEN I am taken to the corresponding section of the README
   return `# ${data.tableOfContents}`;
 }
-
-// Function for rendering
-function renderInstallation(installation) {
-  return `# ${data.installation}`;
-}
-
-// Function for rendering
-function renderUsuage(usuage) {
-  return `# ${data.usuage}`;
-}
-
 // TODO: Create a function that returns the license section of README
 // If there is no license, return an empty string
-function renderLicenseSection(license) {}
-
-// Function for rendering
-function renderContributing(contributing) {
-  return `# ${data.contributing}`;
+function renderLicenseSection(license) {
+  // WHEN I choose a license for my application from a list of options
+  // THEN a badge for that license is added near the top of the README
+  // and a notice is added to the section of the README entitled License
+  // that explains which license the application is covered under
 }
-
-// Function for rendering
-function renderTests(tests) {
-  return `# ${data.tests}`;
-}
-
-// Function for rendering
+// Function for rendering question
 function renderQuestions(questions) {
+  //WHEN I enter my GitHub username
+  //THEN this is added to the section of the README entitled Questions,
+  // with a link to my GitHub profile
+  //WHEN I enter my email address
+  //THEN this is added to the section of the README entitled Questions,
+  //with instructions on how to reach me with additional questions
   return `# ${data.questions}`;
 }
 
 // TODO: Create a function to generate markdown for README
 function generateMarkdown(data) {
   return `
-# ${renderTitle(data.title)}
+# ${data.title}
 
-## Description
+## Description 
+${data.description}
 
 ## Table of Contents
 
 ## Installation
+${data.installation}
 
 ## Usage
+${data.usuage}
 
 ## License
 
@@ -61,8 +45,10 @@ function generateMarkdown(data) {
 - [Link to the Repository]
 
 ## Contributing
+${data.contributing}
 
 ## Tests
+${data.test}
 
 ## Questions
 
