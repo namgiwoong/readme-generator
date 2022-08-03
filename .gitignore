@@ -3,3 +3,6 @@ node_modules
 
 #Mav DS_Store Files
 .DS_Store
+
+#End result so it doesn't commit to repo
+OUTPUT_README.md

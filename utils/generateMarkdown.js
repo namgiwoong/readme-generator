@@ -10,6 +10,16 @@ function renderLicenseLink(license) {}
 // If there is no license, return an empty string
 function renderLicenseSection(license) {}
 
+//data.title
+//data.description
+//data.tableOfContents
+//data.installation
+//data.usuage
+//data.license
+//data.contributing
+//data.tests
+//data.questions
+
 // TODO: Create a function to generate markdown for README
 function generateMarkdown(data) {
   return `# ${data.title}
