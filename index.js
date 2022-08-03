@@ -15,7 +15,7 @@ const question = [
 ];
 
 //Create a function to write README file
-function writeToFile(fileName, data) {}
+// function writeToFile(fileName, data) {}
 
 //Create a function to initialize app
 function init() {
@@ -28,7 +28,8 @@ function init() {
 
       //THEN write the `markdown` to a file ``OUTPUT_README.md`
       fs.writeFile("OUTPUT_README.md", markdown, (err) =>
-      err ? console.error(err) : console.log("Success")
+        err ? console.error(err) : console.log("Success")
+      );
     });
 }
 
