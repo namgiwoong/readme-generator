@@ -42,6 +42,7 @@ const question = [
   {
     type: "list",
     message: "license for the project:",
+    choices: ["MIT", "APACHE2.0", "GPL 3.0", "BSD 3", "None"],
     name: "license",
   },
   //username added to question section with github link
