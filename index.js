@@ -30,11 +30,11 @@ const question = [
   {
     type: "input",
     message: "contribution:",
-    name: "contribution",
+    name: "contributing",
   },
   {
     type: "input",
-    message: "test",
+    message: "test:",
     name: "test",
   },
   //badge added near the top of README and adde to the license section
@@ -57,6 +57,7 @@ const question = [
   },
 ];
 
+//NOT REQUIRED TO USE THIS FUNCTION
 //Create a function to write README file
 // function writeToFile(fileName, data) {}
 

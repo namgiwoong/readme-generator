@@ -26,10 +26,15 @@ function renderQuestions(questions) {
   //WHEN I enter my GitHub username
   //THEN this is added to the section of the README entitled Questions,
   // with a link to my GitHub profile
+  if (data.username) {
+    ("- [GitHub] (https://github.com/namgiwoong)");
+  }
   //WHEN I enter my email address
   //THEN this is added to the section of the README entitled Questions,
   //with instructions on how to reach me with additional questions
-  return `# ${data.questions}`;
+  if (data.email) {
+    ("- [To contact me] (nameric@ymail.com)");
+  }
 }
 
 // TODO: Create a function to generate markdown for README
@@ -51,7 +56,7 @@ ${data.description}
 
 - [Test](#test)
 
-- [Question])(#question)
+- [Question])(#questions)
 
 ## Installation
 ${data.installation}
@@ -72,6 +77,8 @@ ${data.contributing}
 ${data.test}
 
 ## Questions
+${renderQuestions}
+
 
 `;
 }

@@ -1,7 +1,7 @@
 # node modules directory
 node_modules
 
-#Mav DS_Store Files
+#Mac DS_Store Files
 .DS_Store
 
 #End result so it doesn't commit to repo
