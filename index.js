@@ -9,8 +9,51 @@ const generateMarkdown = require("./utils/generateMarkdown");
 const question = [
   {
     type: "input",
-    message: "Title of README:",
+    message: "project title:",
     name: "title",
+  },
+  {
+    type: "input",
+    message: "description:",
+    name: "description",
+  },
+  {
+    type: "input",
+    message: "installation:",
+    name: "installation",
+  },
+  {
+    type: "input",
+    message: "usage:",
+    name: "usuage",
+  },
+  {
+    type: "input",
+    message: "contribution:",
+    name: "contribution",
+  },
+  {
+    type: "input",
+    message: "test",
+    name: "test",
+  },
+  //badge added near the top of README and adde to the license section
+  {
+    type: "input",
+    message: "license for the project:",
+    name: "license",
+  },
+  //username added to question section with github link
+  {
+    type: "input",
+    message: "Github username:",
+    name: "username",
+  },
+  //email added to question section with instruction on how to reach me with additional quesiton
+  {
+    type: "input",
+    message: "email address:",
+    name: "email",
   },
 ];
 
