@@ -2,12 +2,20 @@
 function renderTableOfContents(tableOfContents) {
   // WHEN I click on the links in the Table of Contents
   // THEN I am taken to the corresponding section of the README
-  // if (license === none) return "" else return -[license](#license)
+  if (license === none) {
+    return "";
+  } else {
+    return "-[license](#license)";
+  }
   return `# ${tableOfContents}`;
 }
 // TODO: Create a function that returns a license badge based on which license is passed in
 // If there is no license, return an empty string
-function renderLicenseBadge(license) {}
+function renderLicenseBadge(license) {
+  if (data.license) {
+    return "";
+  } else return "-[license](#license)";
+}
 
 // TODO: Create a function that returns the license link
 // If there is no license, return an empty string
@@ -66,8 +74,6 @@ ${data.usuage}
 
 ## License
 
-- [Link to the Website] (https://github.com/namgiwoong/readme-generator)
-- [Link to the Repository]
 //this project is licensed under ....
 
 ## Contributing

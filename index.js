@@ -38,8 +38,9 @@ const question = [
     name: "test",
   },
   //badge added near the top of README and adde to the license section
+  //list
   {
-    type: "input",
+    type: "list",
     message: "license for the project:",
     name: "license",
   },
